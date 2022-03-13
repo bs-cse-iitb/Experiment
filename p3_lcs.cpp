@@ -10,12 +10,12 @@ int lcs(char x[],char y[]){
     
     for(i =0; i< m+1; i++){
         for(j=0; j<n+1;j++){
-                arr[i][j]==0;
+                arr[i][j]=0;
         }
     }
     for(i =1; i< m+1; i++){
         for(j=1; j<n+1;j++){
-            cout<<arr[i][j]<< " ";
+            //cout<<arr[i][j]<< " ";
             //cout<<x[i-1]<<y[j-1];
             if(x[i-1]==y[j-1]){
                 arr[i][j]=arr[i-1][j-1]+1;
